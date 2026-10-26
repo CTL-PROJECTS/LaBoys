@@ -27,6 +27,8 @@ where you can insert the chemical potential evaluated at $c(t,x,y)$. In this set
 
 Write a routine that initializes $c(0,x,y)$ randomly and then calculates $c(t,x,y)$ for a duration of 10000 time steps (up to time $t=100$). Choose $M=1.0$, $\kappa=1.0$, and $N=128$. Visualize the concentration field in the course of time, by showing snapshots each 500 steps. Resulting frames at step 0 and step 10000 may look like this: 
 
+The Task 1 script also saves the displayed snapshots as `Scripts/Task_1/task_1_animation.gif` for playback.
+
 <img src="images/task1-step0.png" width="40%"> <img src="images/task1-step10000.png" width="40%"> 
 
 Verify what happens if you begin with a constant $c(0,x,y)$, and if you begin with a $c(0,x,y)$ that is zero everywhere except on a single node. 
@@ -106,5 +108,3 @@ $$f(c)=1-\cos(c)$$
 #### GPU acceleration using CuPy
 #### Finite-volume instead of finite-difference discretization
 #### Semi-implicit Fourier solver (FFT)
-
-
